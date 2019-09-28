@@ -2,6 +2,18 @@ body {
     background: #fefefe;
 }
 
+.heading{
+    margin-bottom: 48px;
+    font-size: 30px;
+}
+
+.main{
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+    padding-top: 50px;
+}
+
 .mainHeader {
     color: #19535F;
     font-size: 30px;
@@ -18,16 +30,13 @@ p {
 
 
 
-.link{
-    color: #484538;
-}
+
 
 .thirdHeader{
     color: #D72483;
 }
 
-.about{
-    width: 700px;
+
    
 }
 
@@ -38,5 +47,52 @@ p {
     border: 10px solid red;
     margin: 10px;
     background: yellowgreen;
+    position: sticky;
+    top: 0;
 
+}
+
+.top{
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+}
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 16px;
+    background: white;
+}
+
+
+.about{
+
+}
+
+.about__header{
+    color: #1460aa;
+}
+
+.about__link{
+    color: #484538;
+}
+
+.about__paragraph{
+    padding: 16px;
+}
+
+.about__paragraph--mini{
+    color: #88292F;
+}
+
+.about__picture{
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    float: left;
+    margin: 0 16px 16px 0;
 }

@@ -10,31 +10,36 @@
 </head>
 
 <body>
-    <main>
-        <header>
-            <a class="link" href="index.html">Strona Główna</a>
-            <a class="link"href="podstrona.html">Podstrona</a>
+    <main id="top" class="main">
+        <header class="navigation">
+            <a class="navigation__link" href="index.html">Strona Główna</a>
+            <a class="navigation__link"href="podstrona.html">Podstrona</a>
         </header>
 
         <header>
-        <h1 class="mainHeader">Maciej Korsan - Strona domowa - github active</h1>
+        <h1 class="heading">Maciej Korsan - Strona domowa - github active</h1>
         </header>
         
         <section class="about">
             <div class="box">treść pierwszego DIV elementu</div>
-            <h2 class="sectionHeader">Kim jestem?</h2>
-            <p class="paragraph">Dużo tekstu dużo tsekstu duzo tekstu dużo tekstu dużo tekstu dużo tekstu<br>
+            <h2 class="about__header">Kim jestem?</h2>
+            <p class="about__paragraph">
+                <img src="ja2.jpeg" alt="uśmiechniety ofi" class="about__picture"/>
+                Dużo tekstu dużo tsekstu duzo tekstu dużo tekstu dużo tekstu dużo tekstu<br>
 
-                <a href="#pamietniczek">Przejdz do pamiętniczka</a>
-
+                <a class="about__link" href="#pamietniczek">Przejdz do pamiętniczka</a>
             </p>
+                <p class="about__paragraph about__paragraph--mini about__paragraph--js">
+                    Testuję modyfikator
+                </p>
+            
         </section>
         
         <section id="pamietniczek">
             <h2 class="sectionHeader">Pamiętniczek</h2>
             <section>
                 <h3 class="thirdHeader">Jak stworzyć prawidłowego HTML'a?</h3>
-                <p>Contrary to popular belief, <b>Lorem</b> Ipsum is not simply random text. It has roots in a piece of
+                <p class="paragraph">Contrary to popular belief, <b>Lorem</b> Ipsum is not simply random text. It has roots in a piece of
                     classical <strong>Latin</strong>Latin> literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
                     professor at Hampden-Sydney College in Virginia,
                     looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going
@@ -46,7 +51,7 @@
             </section>
             <section>
                 <h3 class="thirdHeader">Czy nagrywanie szkolenia to prosta sprawa?</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                <p class="paragraph">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                     classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
                     professor at Hampden-Sydney College in Virginia,
                     looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going
@@ -55,8 +60,8 @@
         </section>
         <section>
             <h3 class="thirdHeader">Praca Domowa</h3>
-            <p>moja praca domowa, nauczyłem się dodwać znacznik h3 oraz p w odzielnej sekcji</p><br />
-            <p>tutaj odzieliłem tekst enterem poprzez wskaźnik br</p>
+            <p class="paragraph">moja praca domowa, nauczyłem się dodwać znacznik h3 oraz p w odzielnej sekcji</p><br />
+            <p class="paragraph">tutaj odzieliłem tekst enterem poprzez wskaźnik br</p>
         </section>
 
        
@@ -64,6 +69,7 @@
     </main>
 
     <footer>
+        <a href="#top" class="top">Na górę</a>
         Powered by Bartek
     </footer>
     <script src="main.js">
