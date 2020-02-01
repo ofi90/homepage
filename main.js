@@ -1,7 +1,7 @@
 console.log('siema');
 
 const name= "Bartosz Oficjalski";
-const age= 29;
+const age= 75;
 
 console.log(name);
 console.log(age);
@@ -18,3 +18,21 @@ const paragraphs = document.querySelectorAll('p');
 
 console.log(paragraphs);
 console.log(paragraphs[0]);
+
+function calculate(x) {
+    x = x + 3;
+    console.log(x);
+    return x+7
+}
+
+console.log(calculate(2));
+const myCalculation = calculate(4);
+console.log(myCalculation);
+
+const button = document.querySelector('.header__button--js');
+console.log(button);
+
+function handleClick(){
+    console.log('halo')
+}
+button.addEventListener('click', handleClick);
